@@ -10,6 +10,7 @@ Connector between Shopify and MailChimp to facilitate the sync of customer data 
 - Application should sync the 'accepts marketing' status from within Shopify to MailChimp
 - Repositiory to include updated README.md with build/run/deploy instructions
 - Repositiory to include meaningful commit messages
+- Bonus points for use of TypeScript
 - Bonus points for use of well supported packages
 - Bonus points for use of Serverless framework
 - Bonus points for use of Gitmoji
