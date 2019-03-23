@@ -1,0 +1,19 @@
+{
+  "name": "shopify-mailchimp-test",
+  "version": "1.0.0",
+  "description": "Connector between Shopify and MailChimp to facilitate the sync of customer data and subscription status.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaronGaddes/shopify-mailchimp-test.git"
+  },
+  "author": "Aaron Gaddes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AaronGaddes/shopify-mailchimp-test/issues"
+  },
+  "homepage": "https://github.com/AaronGaddes/shopify-mailchimp-test#readme"
+}
