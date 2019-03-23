@@ -2,9 +2,12 @@
   "name": "shopify-mailchimp-test",
   "version": "1.0.0",
   "description": "Connector between Shopify and MailChimp to facilitate the sync of customer data and subscription status.",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/tsc",
+    "start": "node ./dist/index.js",
+    "dev": "npm run build && npm run start"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/AaronGaddes/shopify-mailchimp-test/issues"
   },
-  "homepage": "https://github.com/AaronGaddes/shopify-mailchimp-test#readme"
+  "homepage": "https://github.com/AaronGaddes/shopify-mailchimp-test#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "mailchimp-api-v3": "^1.13.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.4000"
+  }
 }
