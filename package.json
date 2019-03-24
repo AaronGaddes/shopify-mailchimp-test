@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/AaronGaddes/shopify-mailchimp-test#readme",
   "dependencies": {
+    "@types/node": "^11.11.6",
     "dotenv": "^7.0.0",
-    "mailchimp-api-v3": "^1.13.0"
+    "mailchimp-api-v3": "^1.13.0",
+    "shopify-api-node": "^2.18.1"
   },
   "devDependencies": {
     "typescript": "^3.3.4000"
