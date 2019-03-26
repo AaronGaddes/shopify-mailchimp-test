@@ -176,10 +176,13 @@ function generateMailChimpAPIrequest(method:string,mcListId,mcMember) {
         } else {
             let totalSpentChanged = mailChimpMember['merge_fields']['TOTALSPENT'] !== sCust['total_spent'];
 
+            let firstNameChanged = mailChimpMember['merge_fields']['FNAME'] !== sCust['first_name'];
+            let lastNameChanged = mailChimpMember['merge_fields']['LNAME'] !== sCust['last_name'];
+
             let mailChimpMemberStatus = mailChimpMember.status == 'subscribed';
             let marketingStatusChanged = mailChimpMemberStatus !== sCust['accepts_marketing'];
 
-            if(totalSpentChanged || marketingStatusChanged) {
+            if(totalSpentChanged || marketingStatusChanged || firstNameChanged || lastNameChanged) {
                 const newMailChimpMember = createMailChimpMemberFromShopifyCustomer(sCust);
                 const batchRequest = generateMailChimpAPIrequest('put',mailChimpListId,newMailChimpMember);
 
