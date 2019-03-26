@@ -1,7 +1,5 @@
 # Shopify and MailChimp Connector (Test)
 
-> Work In Progress!
-
 Connector between Shopify and MailChimp to facilitate the sync of customer data and subscription status.
 
 ## Setup
